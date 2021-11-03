@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>OL</title>
+<script src="https://openlayers.org/api/OpenLayers.js">
+</script>
+<style>
+#map {
+    width:400px;
+    height:400px;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+
+<script>
+// your JS code 
+console.log("Hola, all!");
+alert("Hello JS World!");
+
+// my data is a label/ID for what we store, which is the object stored in variable d, 
+// whose value is {"k1":[{"a":5, "b":-6}]}, which consists of a key called k1 
+// with an array as its value: [{"a":5, "b":-6}]
+var d = {"k1":[{"a":-118.28298118257939, "b":34.02119173599364},
+{"a":-118.28429357967877, "b":34.020931993570116},
+{"a":-118.28679735220966, "b":34.018768936109744},
+{"a":-118.2864767900682, "b":34.023825854377705},
+{"a":-118.28327810233301, "b":34.01983106397033},
+{"a":-118.28620425275027, "b":34.020763849618476},
+{"a":-118.28797775635664, "b":34.02150439266544},
+{"a":-118.2911052229918, "b":34.022893611146365},
+{"a":-118.29059363353838, "b":34.02160492728847},
+{"a":-118.29061577495726, "b":34.01937493069624},
+{"a":-118.28403975711551, "b":34.02456156696948},
+{"a":-118.28187611770589, "b":34.020617251134375},
+{"a":-118.29845118755884, "b":34.022010440916866}
+]};
+localStorage.setItem("myData",JSON.stringify(d));
+// you'd need to modify the above, to store all your points
+
+
+//next [presumably after closing the browser, and reloading our html]
+// we can fetch the stored data, just by supplying its key:
+var dataStored = JSON.parse(localStorage.getItem("myData"));
+// verify that we fetched our data correctly
+console.log(dataStored); 
+// we can iterate through our array [of points], like so:
+var a = dataStored.k1; // a will contain our array
+for(var indx in a) { // indx is 0,1,2...
+  console.log(a[indx]); // this could be a single point
+}
+
+// here's how to plot points on a map, using OpenLayers:
+// [this is code I mildly modified, from an existing source]
+function initMap() {
+        map = new OpenLayers.Map('map');
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+}// initMap()
+
+function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                map.getProjectionObject() // to Spherical Mercator Projection
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat, 8); // second arg is zoom level
+        //console.log(latitude + ", " + longitude);
+}// addMarker()
+
+
+// load and setup map layers
+initMap();
+
+// here's how to plot just ONE [lat,long] on the map! 
+addMarker(34.02119173599364,-118.28298118257939); // somewhere in SoCal...
+addMarker(34.020931993570116,-118.28429357967877);
+addMarker(34.018768936109744,-118.28679735220966);
+addMarker(34.023825854377705,-118.2864767900682);
+addMarker(34.01983106397033,-118.28327810233301);
+addMarker(34.020763849618476,-118.28620425275027);
+addMarker(34.02150439266544,-118.28797775635664);
+addMarker(34.022893611146365,-118.2911052229918);
+addMarker(34.02160492728847,-118.29059363353838);
+addMarker(34.01937493069624,-118.29061577495726);
+addMarker(34.02456156696948,-118.28403975711551);
+addMarker(34.020617251134375,-118.28187611770589);
+addMarker(34.022010440916866,-118.29845118755884);
+
+</script>
+
+</body>
+
+</html>
