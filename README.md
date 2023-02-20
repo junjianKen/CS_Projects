@@ -1,5 +1,5 @@
 # CS_Projects
-This repository contains two of my projects: Gitlet and Pacman. 
+This repository contains two of my class projects - Gitlet and Pacman, and one of my summer intern project - Longzhitou Data Mining Intern. 
 
 The Gitlet project is to create a version-control system mimicking basic features in a popular system - Git using Java standard library.
 The details of this Gitlet project: [**Link**](https://cs61bl.org/su22/projects/gitlet/).
