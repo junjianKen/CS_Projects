@@ -4,4 +4,4 @@ The Pacman project is to create an AI-based Pacman agent that could navigate via
 
 The details of this Pacman project: [**Link**](https://sites.wustl.edu/amtabakhi/project1-search-2/).
 
-The codes that we wrote are in 2 files - search.py and searchAgent.py, where the 4 search algorithm are implemented in search.py.
+The codes that we wrote are in 2 files - search.py and searchAgents.py, where the 4 search algorithms (DFS, BFS, uniform cost, A*) are implemented in search.py.
