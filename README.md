@@ -9,4 +9,6 @@ The Gitlet project is to create a version-control system mimicking basic feature
 The details of this Gitlet project: [**Link**](https://cs61bl.org/su22/projects/gitlet/).
 The code are inside Gitlet_Project -> proj2 -> gitlet. The test files are inside Gitlet Project-> proj2 -> test_files.  
 
-For the Pacman...
+The Pacman project is to create an AI-based Pacman agent that could navigate via a maze to collect food from a specified location.
+The details of this Pacman project: [**Link**](https://sites.wustl.edu/amtabakhi/project1-search-2/).
+The codes that we wrote are in 2 files - search.py and searchAgents.py
