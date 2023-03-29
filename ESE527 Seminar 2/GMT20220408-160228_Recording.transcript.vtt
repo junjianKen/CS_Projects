@@ -1,0 +1,1626 @@
+WEBVTT
+
+1
+00:00:00.299 --> 00:00:03.840
+Florian: Please request recording meetings okay.
+
+2
+00:00:04.080 --> 00:00:06.359
+Keith Kamons: It seems to me, I think I was just able to request it.
+
+3
+00:00:07.919 --> 00:00:09.090
+Patricio La Rosa: Thank you.
+
+4
+00:00:10.380 --> 00:00:11.730
+Patricio La Rosa: Perfect great.
+
+5
+00:00:13.080 --> 00:00:19.140
+Patricio La Rosa: So came in for the sake of time we're going to.
+
+6
+00:00:20.220 --> 00:00:32.220
+Patricio La Rosa: get started and we'd like to welcome to our seminar in the morning at 11am would like to welcome Dr if Florian or know the.
+
+7
+00:00:33.540 --> 00:00:39.540
+Patricio La Rosa: Korean actually is the data scientists or researchers and scientists team in the year crop the farmer.
+
+8
+00:00:40.380 --> 00:00:49.200
+Patricio La Rosa: In prior to this is he actually was in the aircraft science working on developing autonomous supply chain systems.
+
+9
+00:00:49.770 --> 00:01:02.040
+Patricio La Rosa: In order to drive the right balance between demand and supply in 3% sure the supply chain were several liable this case sick and chemistry producer to satisfy agricultural needs.
+
+10
+00:01:03.300 --> 00:01:13.290
+Patricio La Rosa: A doctor I know he prior to joining a year conducted research at the interface, or what we call it the optimization of machine learning.
+
+11
+00:01:14.190 --> 00:01:21.900
+Patricio La Rosa: A from the University are, it will be and what he has a PhD in operational research and a bachelor's in psychology.
+
+12
+00:01:22.710 --> 00:01:34.980
+Patricio La Rosa: And a you seeing the combination of this a technical skill, because he's passionate about virtualization and derive actionable insights by communicating.
+
+13
+00:01:35.670 --> 00:01:49.620
+Patricio La Rosa: Using human perception a therefore it's really great to see the word that he actually dropped within within our company and going to help us improve our ability to communicate over salt more effectively.
+
+14
+00:01:50.580 --> 00:02:13.560
+Patricio La Rosa: He him Freudian within the Chair that what we do and we hope that doing direct along the presentation and and you learn from him based on his experience a doctor no please take it away, and thank you for joining us today a at the very late, I went in the evening of us were in Germany.
+
+15
+00:02:15.600 --> 00:02:28.110
+Florian: it's a pleasure good to be here um I just want to how can I can still share my screen When I entered the meeting I kind of had the option, but now I don't see it anymore.
+
+16
+00:02:28.230 --> 00:02:30.030
+Patricio La Rosa: or you'll see a button.
+
+17
+00:02:32.730 --> 00:02:33.870
+Patricio La Rosa: That says share screen.
+
+18
+00:02:34.350 --> 00:02:35.850
+Florian: Oh, I do have government.
+
+19
+00:02:36.750 --> 00:02:38.220
+Florian: Great there we go.
+
+20
+00:02:43.980 --> 00:02:45.150
+Florian: Okay, does it work.
+
+21
+00:02:46.350 --> 00:02:48.210
+Patricio La Rosa: Great yes, we can see it.
+
+22
+00:02:52.440 --> 00:02:52.920
+Florian: Okay.
+
+23
+00:02:54.090 --> 00:03:02.640
+Florian: Yes, thanks so much for for joining for the session i'm Florian i'm located in Cologne Germany so here it's almost no time now.
+
+24
+00:03:05.220 --> 00:03:08.100
+Florian: Thanks so much for inviting inviting me.
+
+25
+00:03:08.220 --> 00:03:09.150
+To to talk.
+
+26
+00:03:10.890 --> 00:03:16.920
+Florian: and talk about visualization that's a topic I actually embrace more and more over the.
+
+27
+00:03:16.920 --> 00:03:19.470
+Florian: past years, I have to because.
+
+28
+00:03:20.910 --> 00:03:23.790
+Florian: The challenge, I think, in in all of our.
+
+29
+00:03:25.440 --> 00:03:29.760
+Florian: projects is complexity and complexity.
+
+30
+00:03:31.920 --> 00:03:39.870
+Florian: Well, is something that you can learn to master but it's something very difficult to communicate to others, especially people that are maybe not in the same field.
+
+31
+00:03:40.980 --> 00:03:50.400
+Florian: But also, if there are colleagues colleagues of yours or friends of yours and work on the same field, sometimes difficult and takes time to transfer knowledge or to make them understand what you're actually doing.
+
+32
+00:03:52.230 --> 00:03:58.170
+Florian: And in this regard relation can help a lot and yeah, I would like to.
+
+33
+00:03:59.640 --> 00:04:11.100
+Florian: Talk about some of the basic concepts so it's not a very detailed talk about all of the details that are there and there's a lot to talk about but it's just a high level overview, to start with.
+
+34
+00:04:12.750 --> 00:04:20.700
+Florian: The talk is very interactive, so I would like you to just participate as much as you would like I would I will ask you a lot of questions and.
+
+35
+00:04:22.020 --> 00:04:25.860
+Florian: All right, let's just start it started rolling.
+
+36
+00:04:31.980 --> 00:04:33.630
+Florian: First question is why.
+
+37
+00:04:35.190 --> 00:04:39.390
+Florian: I would just spend time on it, I already explained a little bit why um.
+
+38
+00:04:39.930 --> 00:04:48.780
+Florian: Well, the thing the key thing is probably that whether you prepare your best thesis your master thesis whether you're working on a PhD project or whether you're working.
+
+39
+00:04:49.320 --> 00:04:58.260
+Florian: And you want to prepare a presentation, for your team for management that you want to convince someone of a certain message.
+
+40
+00:04:59.790 --> 00:05:05.850
+Florian: That you did something great that you that you have to prove something new to innovated.
+
+41
+00:05:07.410 --> 00:05:14.040
+Florian: And you want people to not only understand the message, but you want people to remember what you did there.
+
+42
+00:05:16.200 --> 00:05:25.950
+Florian: And this is what visualization is very good for because pictures, is something that stick in mind, rather than more, much more than language.
+
+43
+00:05:29.160 --> 00:05:45.750
+Florian: And secondly, that's especially important now for our more and more remote work and remote interactions is to avoid misunderstandings, especially in more complex fields like as all of us are working in and complexities misunderstandings are very common.
+
+44
+00:05:46.770 --> 00:05:54.810
+Florian: And visualizations can help here to clarify assumptions models and results and interpretations.
+
+45
+00:05:56.520 --> 00:06:04.830
+Florian: No, this is actually country dictionary what we might think, because everyone knows that if you want to prepare a good visual that can take quite some time.
+
+46
+00:06:05.880 --> 00:06:09.270
+Florian: And, but he I say save time actually and that comes.
+
+47
+00:06:10.350 --> 00:06:25.170
+Florian: From the reason that if you prepare a nice visual you can reuse a time and time again like just an example like this presentation that i've just showing you today, I already presented five times or so over the course of the last two years to different audiences.
+
+48
+00:06:26.220 --> 00:06:30.900
+Florian: So, once you have done it, you can just be use it, especially for formerly.
+
+49
+00:06:32.190 --> 00:06:49.500
+Florian: Work that you're really proud of that, you can present over and over again, and especially you can you can say audiences time, and this is, if you if you explain something where by by maybe showing data or by even just explaining it just.
+
+50
+00:06:51.090 --> 00:06:52.920
+Florian: With talking.
+
+51
+00:06:55.320 --> 00:07:11.880
+Florian: That sometimes require a lot of cognitive energy for your audience to to understand to get into the topic understand what's going on to think, whereas if you have a common picture that you share you have like a like a much better basis to talk about things together.
+
+52
+00:07:13.200 --> 00:07:22.020
+Florian: So in this regard to save the audience's time and energy, if you prepare a nice visual which is free of any misunderstandings and which makes your main point when you break here.
+
+53
+00:07:23.730 --> 00:07:39.210
+Florian: And, and finally, I think this is also actually one of the most important things that just for yourself also if you prepare a nice visual that you can reuse again and again, and really highlight the quality of your work also the quality of the visual Buddhist.
+
+54
+00:07:40.620 --> 00:07:42.630
+Florian: reflect the quality of.
+
+55
+00:07:46.410 --> 00:07:47.130
+Florian: Okay.
+
+56
+00:07:49.110 --> 00:07:55.890
+Florian: Then I have a small of a warm up challenge here, and the challenge is that.
+
+57
+00:07:57.270 --> 00:08:05.160
+Florian: I want you to count the number of times digit three appears here in the text.
+
+58
+00:08:15.510 --> 00:08:16.980
+Owen Ricketts: looks like six times.
+
+59
+00:08:17.910 --> 00:08:18.840
+Tushar Menon: I counted seven.
+
+60
+00:08:19.890 --> 00:08:20.430
+Valentina Harding: seven.
+
+61
+00:08:22.080 --> 00:08:22.740
+Owen Ricketts: I believe you.
+
+62
+00:08:24.090 --> 00:08:24.450
+Owen Ricketts: Okay.
+
+63
+00:08:25.020 --> 00:08:28.740
+Florian: Excellent thanks Evan actually corrected, we have to.
+
+64
+00:08:30.060 --> 00:08:31.350
+Florian: Look at the solution but.
+
+65
+00:08:32.580 --> 00:08:35.130
+Florian: let's just go to the next slide and then i'll show you what I mean.
+
+66
+00:08:37.230 --> 00:08:40.560
+Florian: So, if you would try to do the same thing now was this slide.
+
+67
+00:08:41.760 --> 00:08:46.890
+Florian: A little bit easier, I guess, he seemingly it's actually seven.
+
+68
+00:08:48.090 --> 00:08:57.060
+Florian: And that's actually what, in a very brief example about the cognitive processing that you need to do like even though it's very.
+
+69
+00:08:57.870 --> 00:09:03.630
+Florian: Easy the same information, the second slide I highlighted what you had to look for and there's obviously way easier.
+
+70
+00:09:04.500 --> 00:09:12.330
+Florian: In the first right you took you quite some seconds and I guess also quite some energy to process and go through all the rows and columns whereas here, I really just.
+
+71
+00:09:12.900 --> 00:09:23.100
+Florian: highlighted like a little bit and it's way easier for you and the same applies for like this basic basic principle of visualization what you want to do so, you don't want your audience to look.
+
+72
+00:09:23.790 --> 00:09:33.150
+Florian: for something that you want to tell them, but you want to just show it directly and highlighted as easy as possible for your audience to perceive it.
+
+73
+00:09:38.190 --> 00:09:54.930
+Florian: And if later on, you wanna read some more on visualization, then I can recommend these two books also most of the examples that I will know go through taken from those, especially the first book was very good it's a very brief recap, so you can read it, a couple of days.
+
+74
+00:09:56.100 --> 00:10:00.180
+Florian: based on love examples were practical and the second book is a little bit more detailed.
+
+75
+00:10:01.740 --> 00:10:04.350
+Florian: there's also more about statistical visualization.
+
+76
+00:10:08.340 --> 00:10:18.720
+Florian: So now, I actually do the same thing as I showed you with the threes but now we go into actual visual and what I want you to do is I want you to look at this this graph and I.
+
+77
+00:10:19.440 --> 00:10:28.170
+Florian: I want to just shout out your ideas like what do you see here like what is, what is your interpretation of this visual what was the message that is.
+
+78
+00:10:29.730 --> 00:10:30.750
+Florian: being conveyed here.
+
+79
+00:10:35.760 --> 00:10:42.720
+Valentina Harding: yeah most people are okay, with the survey like they're neutral I got so that.
+
+80
+00:10:46.890 --> 00:10:50.220
+Tushar Menon: yeah I think I think a good number of people think more people are like.
+
+81
+00:10:51.510 --> 00:10:53.490
+Tushar Menon: favorable towards that the not.
+
+82
+00:10:59.160 --> 00:11:03.660
+Florian: yeah that's what it seems like right like the Green is the biggest one.
+
+83
+00:11:04.950 --> 00:11:07.410
+Florian: So i'm not interested in Raphael board.
+
+84
+00:11:09.300 --> 00:11:09.990
+Florian: um.
+
+85
+00:11:12.690 --> 00:11:12.960
+Florian: But.
+
+86
+00:11:14.940 --> 00:11:21.720
+Florian: What I wanted to also to show you a little bit is that it's just a chart, and this is not really clear what the message is.
+
+87
+00:11:22.770 --> 00:11:29.220
+Florian: You can't you have to read the bar chart and the pie chart and you have to look for the message.
+
+88
+00:11:30.240 --> 00:11:38.610
+Florian: You have to interpret it yourself basically no one gives you any clue what what social the zoo and something that I want to highlight here is that.
+
+89
+00:11:41.010 --> 00:11:44.760
+Florian: For instance, for once, you have a logical ordering it's not really clear.
+
+90
+00:11:46.320 --> 00:11:52.530
+Florian: um so, is it actually that like this is kind of like a scale, so you go from both too excited.
+
+91
+00:11:54.270 --> 00:11:59.940
+Florian: And then, in terms of cognitive effort that you need to do in order to read the visual and try to.
+
+92
+00:12:01.230 --> 00:12:07.260
+Florian: Control some interpretations you needed to look at your at each.
+
+93
+00:12:09.000 --> 00:12:16.890
+Florian: Part of the chart and then look to the color and interpreted and back and forth and back and forth and back and forth and back and forth.
+
+94
+00:12:17.550 --> 00:12:26.880
+Florian: And then whenever you hear you already forgot what we wasn't able to look back at some so because you have this kind of legend which is separated from your pie chart you need to go back and close your eyes.
+
+95
+00:12:28.530 --> 00:12:35.670
+Florian: And then, one thing that is a little bit tricky here, we will come to this topic again again as coloring.
+
+96
+00:12:36.900 --> 00:12:45.960
+Florian: um So here we have very, very strong colors and they also again they don't show any ordering and when you start with blue you go with green and then.
+
+97
+00:12:47.220 --> 00:12:57.210
+Florian: violet and so it's it's not really helping your color it's just showing that something's different than not ordering highlighting.
+
+98
+00:12:58.770 --> 00:13:09.600
+Florian: And okay of platform on the colors that also for your eyes hard to kind of see it can you can you can do it much, much easier for the is.
+
+99
+00:13:10.230 --> 00:13:20.520
+Florian: And, like the overall problem here is, of course, it, the key point is not clear, so you mentioned like Okay, you can read something with the percentages like, but what is the context, like what does it tell us.
+
+100
+00:13:21.630 --> 00:13:26.430
+Florian: We set the message that 50 or 60% or okay or a supermajority we don't know.
+
+101
+00:13:27.840 --> 00:13:37.920
+Florian: i'm not have two more examples and just go ahead and again a shout out your ideas, also in terms of what do you think is not so good about this graph.
+
+102
+00:13:57.960 --> 00:13:58.320
+Florian: Any.
+
+103
+00:13:59.010 --> 00:13:59.490
+Immediate.
+
+104
+00:14:01.290 --> 00:14:01.440
+Tushar Menon: well.
+
+105
+00:14:02.460 --> 00:14:14.100
+Owen Ricketts: I think my first reaction is that it's just very busy like it's hard to kind of look at and and even read, because you have these white percentages on like Gray and light blue.
+
+106
+00:14:15.780 --> 00:14:23.100
+Owen Ricketts: So even like without like whether it's like not even talking about whether it conveys a point or not it's just like kind of difficult to look at.
+
+107
+00:14:25.980 --> 00:14:29.400
+Florian: don't want to look at, if you look at it is, for me it is exhausting and musically.
+
+108
+00:14:32.430 --> 00:14:35.550
+Tushar Menon: I agree with Oh, and also like.
+
+109
+00:14:36.780 --> 00:14:38.490
+Tushar Menon: You can tell what.
+
+110
+00:14:39.630 --> 00:14:44.280
+Tushar Menon: Any of the bars actually correspond to because they all kind of have the same label.
+
+111
+00:14:51.240 --> 00:14:52.050
+Florian: Anything else.
+
+112
+00:14:53.790 --> 00:15:00.750
+Zongxi(Try Zongshi if confused about x sound :) ): will shift all the colors doesn't respond doesn't it's not in all related to them, meaning.
+
+113
+00:15:04.710 --> 00:15:23.820
+Valentina Harding: I think, also the fact that its individual like you don't really know as it like it says features, or something like is that, like one person each like each thing is one person or it's kind of it's hard to tell that like maybe each thing is a different feature that you're trying to portray.
+
+114
+00:15:28.230 --> 00:15:28.710
+Valentina Harding: yeah.
+
+115
+00:15:29.700 --> 00:15:43.470
+Florian: yeah all very good points i'm sorry busy the coloring this is look here, I give you in terms of coloring I would personally look first at kind of just very, very strong color here.
+
+116
+00:15:44.130 --> 00:15:52.200
+Florian: Like the pink, which is very strong and the others, and maybe think that this is the higher but should be highlighted, but maybe it's not.
+
+117
+00:15:54.210 --> 00:15:58.650
+Florian: The alignment here features a keyword that is an overall The message is awesome so clear.
+
+118
+00:15:59.700 --> 00:16:10.230
+Florian: You can What about what is it supposed to be, I think I you mentioned all of the points that I have here so it's very cool to exist, collecting the colors and especially the pink.
+
+119
+00:16:11.550 --> 00:16:21.600
+Florian: Just jumping in your eye your numbers, not in each by okay of these numbers in the power, but then like here and, like you, don't have numbers separate consistent.
+
+120
+00:16:23.100 --> 00:16:43.380
+Florian: Like something that's very should think about the type of chart that we see is kind of stacked vertically horizontally stacked bar chart the problem is that it's hard to compare the length of the bars that are in the middle, like it's easy to see Okay, the.
+
+121
+00:16:45.000 --> 00:16:50.490
+Florian: Category completely satisfied its highest at the top, and then it becomes a little bit lower.
+
+122
+00:16:51.810 --> 00:16:54.660
+Florian: But, for instance, you the great category.
+
+123
+00:16:56.130 --> 00:17:00.840
+Florian: Three because it's sunny squeezed between the other bar so it's hard to compare row by row.
+
+124
+00:17:02.040 --> 00:17:06.780
+Florian: But again, maybe that's not the purpose of this graph which we don't know.
+
+125
+00:17:09.870 --> 00:17:14.160
+Florian: Okay, and then the final final graph, what do you think here.
+
+126
+00:17:37.500 --> 00:17:49.800
+Tushar Menon: Oh, if we're supposed to be comparing the US population like segmentation to the our customers segmentation that kind of runs into the same issue that you just described, with the.
+
+127
+00:17:50.370 --> 00:18:00.030
+Tushar Menon: middle elements, not being aligned with each other so it's not you know super easy to just make a visual comparison between different colors.
+
+128
+00:18:04.710 --> 00:18:05.280
+Florian: Yes.
+
+129
+00:18:07.380 --> 00:18:11.790
+Owen Ricketts: yeah you've also got the like the bright color issue or the yellow and the Green and the topper are.
+
+130
+00:18:12.150 --> 00:18:15.300
+Owen Ricketts: A little bit distracting relative to the less Sprite color is below.
+
+131
+00:18:22.950 --> 00:18:28.620
+Florian: I think that's actually the most important key points here also okay your formatting is also.
+
+132
+00:18:31.080 --> 00:18:42.630
+Florian: Nice colors and again there's no key point, like it's just too it's just basically to two graphs next to each other, but it's not clear what does what messages.
+
+133
+00:18:44.910 --> 00:18:46.050
+Florian: Like what should be focused on.
+
+134
+00:18:47.700 --> 00:18:53.970
+Florian: Okay, these are kind of my initial examples of graphs that are it has some issues and now let's look.
+
+135
+00:18:55.350 --> 00:18:56.760
+Florian: How we could do better.
+
+136
+00:18:57.870 --> 00:19:04.470
+Florian: And they I want to focus on three main points that actually are very important, when you think about creating a visual.
+
+137
+00:19:05.100 --> 00:19:16.290
+Florian: And the first is is to remove to take out the complexity, as much as you can actually quite contrary to what you to usually usually you to thrive and complexity, but if you.
+
+138
+00:19:16.980 --> 00:19:32.670
+Florian: create a visual you want to take it out as much as you want to focus attention so you want to really show the threes to the audience like what should be the what should they focus on, and you want to wrap it in the story so as much as you can.
+
+139
+00:19:34.050 --> 00:19:34.980
+Florian: So it sticks.
+
+140
+00:19:39.810 --> 00:19:43.950
+Florian: Okay, the first example is actually our first one, the pie chart.
+
+141
+00:19:45.000 --> 00:19:49.530
+Florian: And here have a little bit more context for you, and so the actual.
+
+142
+00:19:51.600 --> 00:20:07.140
+Florian: The actual data or the actual visualization is so components, so you have you have some students before your kids before summer camp and how do you like science, then they gave some answer and you ask them also after the science camp some science camp.
+
+143
+00:20:08.520 --> 00:20:12.900
+Florian: and obviously what you want to see us do they like science more or less after the camp.
+
+144
+00:20:14.610 --> 00:20:16.560
+Florian: And the visual that you have now send this.
+
+145
+00:20:17.970 --> 00:20:18.690
+Florian: um.
+
+146
+00:20:19.980 --> 00:20:26.040
+Florian: Do you think this kind of visualization is good to compare the before and after.
+
+147
+00:20:35.370 --> 00:20:47.100
+Tushar Menon: I don't think so because you can't at one glance immediately glean like what the change was you kind of have to compare each category see a change.
+
+148
+00:20:47.490 --> 00:20:48.540
+Florian: yeah exactly.
+
+149
+00:20:49.830 --> 00:20:53.250
+Florian: So the same the same songs obviously for the coloring formatting.
+
+150
+00:20:54.870 --> 00:21:05.460
+Florian: The legend that you have to go back and forth, but you if the main point is that it's really difficult to compare like compare see on one glance is actually more or less.
+
+151
+00:21:09.030 --> 00:21:17.220
+Florian: And how could you do better, so one way to really just do it very simple is to just show one or two numbers.
+
+152
+00:21:18.840 --> 00:21:26.040
+Florian: So here, you will just say um you aggregate kind of the areas I think it was good or excited.
+
+153
+00:21:27.540 --> 00:21:30.270
+Florian: And then you end up with 68% if you if you have just.
+
+154
+00:21:31.470 --> 00:21:32.700
+Florian: two categories aggregated.
+
+155
+00:21:34.170 --> 00:21:46.020
+Florian: And if you aggregate it before you only have 44% So if you want to express kind of the change in one number, you would say 68% of the kids like.
+
+156
+00:21:47.160 --> 00:21:50.430
+Florian: interest with signs compared to 44%.
+
+157
+00:21:51.600 --> 00:22:04.350
+Florian: So this is actually in one number so it's more like like a newspaper headline and the message would be the pilot program of success, so you have like a very short message and the immediate only one number to support that.
+
+158
+00:22:05.670 --> 00:22:08.820
+Florian: So there'll be the simplest way you're, not even a graph so i'm just numbers.
+
+159
+00:22:11.850 --> 00:22:12.510
+Florian: Second.
+
+160
+00:22:13.980 --> 00:22:23.460
+Florian: Well, so basically a summary emphasis on a few key numbers key message club point so one thing that I wanted to stress, yes.
+
+161
+00:22:24.270 --> 00:22:40.530
+Florian: Even if you have a lot of data from experiments from observations from your from your analysis your audience doesn't necessarily need to see it all you just need to see the show the message or show like the most important insights not all the data.
+
+162
+00:22:42.810 --> 00:22:52.980
+Florian: over here like 111 comment I get a lot of seo but Florian number depends on your audience right so of course like if you if you know talk to.
+
+163
+00:22:53.790 --> 00:23:03.720
+Florian: fellow students or colleagues that actually now now the your your whatever you're doing quite well, then of course you can also show them the data because.
+
+164
+00:23:04.170 --> 00:23:12.630
+Florian: that's where they will be interested if I talk to fellow data scientists Al anon given one number l because it will say yeah but give me more details and.
+
+165
+00:23:13.380 --> 00:23:22.950
+Florian: Of course, if you if you present to like lay audience or friends or management management, then you want to keep it simple and I presented data.
+
+166
+00:23:25.050 --> 00:23:27.240
+Florian: Okay second option, how to to present.
+
+167
+00:23:28.770 --> 00:23:29.460
+Florian: This data.
+
+168
+00:23:30.810 --> 00:23:35.220
+Florian: So here is, we have a vertical bar chart.
+
+169
+00:23:37.560 --> 00:23:43.890
+Florian: And what will stand here is the color was used in order to distinguish between before and after.
+
+170
+00:23:45.090 --> 00:23:53.280
+Florian: And you want to spare especially stress the after so the devil's color blue and the other way, like a non dominant collections in grace.
+
+171
+00:23:54.870 --> 00:23:56.880
+Florian: And you see here that the.
+
+172
+00:23:58.140 --> 00:24:02.700
+Florian: The insights are actually labeled along with the.
+
+173
+00:24:03.870 --> 00:24:05.220
+Florian: The data, the graph.
+
+174
+00:24:06.510 --> 00:24:16.470
+Florian: that's also like something that you can can use this technique you don't always have to put your graph and your text below just read it, they just match them with them and.
+
+175
+00:24:18.270 --> 00:24:27.570
+Florian: And you can immediately see us the difference, so you just compare blue and Gray news immediately see oh okay here excited kind of interested so way higher than before.
+
+176
+00:24:28.950 --> 00:24:34.560
+Florian: And Okay, is this way less than before, so you see okay to it went from okay to to excitement.
+
+177
+00:24:36.600 --> 00:24:46.740
+Florian: And that's also why, like you see highlighting was used very sparsely but, at the important points, so these bar that you want to pay attention to me to.
+
+178
+00:24:47.160 --> 00:24:55.950
+Florian: The blue kind of interested in the blue excitement highlighted and the OK Gray, is highlighted, because those are the ones that changed significantly.
+
+179
+00:24:57.930 --> 00:24:59.340
+Florian: And here's some description also.
+
+180
+00:25:00.720 --> 00:25:05.160
+Florian: Again in the relevant colors and again if we're heading.
+
+181
+00:25:06.630 --> 00:25:07.620
+Florian: To to kind of.
+
+182
+00:25:09.060 --> 00:25:09.990
+Florian: bring it all together.
+
+183
+00:25:13.980 --> 00:25:17.790
+Florian: So very simple potshots most easiest easiest chart you can choose.
+
+184
+00:25:19.410 --> 00:25:28.350
+Florian: They are together in one shot before and after it's important because, then you can compare easier and only two colors and clear message.
+
+185
+00:25:34.470 --> 00:25:43.440
+Florian: And I also have a third option there's, of course, hundreds of options that you could visualize, this is another kind of chart where you kind of show the trend.
+
+186
+00:25:47.400 --> 00:25:50.280
+Florian: So you can learn the left before and on the Right after.
+
+187
+00:25:51.960 --> 00:25:55.080
+Florian: And again, you go category by category.
+
+188
+00:25:56.280 --> 00:26:06.060
+Florian: And you see me again you highlight what you want to highlight like the blue messages okay excitement interesting goes up and orange messages majority go went down.
+
+189
+00:26:07.620 --> 00:26:19.410
+Florian: So that's that's also one option to show here, the problem is a little bit that the ordering might not be consistent anymore like because here it's like not the ordering depends on the.
+
+190
+00:26:20.790 --> 00:26:21.570
+Florian: value.
+
+191
+00:26:23.310 --> 00:26:29.580
+Florian: So i'm not great board okay Kevin actually hear it fits but it might not always fit so this a little bit the problem here, but.
+
+192
+00:26:30.840 --> 00:26:38.190
+Florian: Also, also works and you already see that, depending on the type of chart you choose you always have advantages or disadvantages.
+
+193
+00:26:39.840 --> 00:26:49.140
+Florian: So there's not a solution like one fitted all strategy to punch a perfect chart but dentally tenancy should be to do it as simple as you can.
+
+194
+00:26:52.290 --> 00:26:52.890
+Florian: um.
+
+195
+00:26:55.020 --> 00:26:56.730
+Florian: Okay second example.
+
+196
+00:27:00.990 --> 00:27:12.510
+Florian: And again here is a citizen you example it's a little more complex, so I want you to take like also one or two minutes, just to try to soak it in like what is happening here and then let me know what you think like what is the message here.
+
+197
+00:28:04.620 --> 00:28:09.810
+Tushar Menon: think the lines show how i'm like what the.
+
+198
+00:28:10.830 --> 00:28:23.100
+Tushar Menon: aggregate arrival delay is for these different airlines as the of the trip distance increases and then each point on the scatter plot is.
+
+199
+00:28:24.240 --> 00:28:32.790
+Tushar Menon: Like a collection of flights for that distance and time so like how many samples, they have for that what.
+
+200
+00:28:37.710 --> 00:28:40.110
+Florian: Do you already see a message here like what could be.
+
+201
+00:28:42.810 --> 00:28:43.500
+What could be.
+
+202
+00:28:44.820 --> 00:28:46.170
+Florian: take away from this graph.
+
+203
+00:28:52.410 --> 00:29:11.340
+Tushar Menon: It seems like the the first most obvious takeaway is that for TRIPS under look around 1000 miles or so there's usually about a 20 minute delay from from most flights.
+
+204
+00:29:23.910 --> 00:29:32.760
+Valentina Harding: Really, since there's like a line going there, like a like and I want to like see like it makes me think it wants to show that, like.
+
+205
+00:29:33.720 --> 00:29:52.680
+Valentina Harding: As distance increases there's a relationship with like the delayed time but it looks like like delta like as the distance increases the delay time goes down and then with American it goes up a little and then other flights also decreases but.
+
+206
+00:29:54.180 --> 00:29:59.760
+Valentina Harding: The scaling is just I don't know if it wants us to it doesn't seem like there's that much of a relationship.
+
+207
+00:30:03.120 --> 00:30:06.090
+Florian: And of course the I think the one very simple message that.
+
+208
+00:30:06.180 --> 00:30:16.530
+Florian: Maybe it is maybe want to become the social conventions that American and delta just have more time than other airlines.
+
+209
+00:30:19.590 --> 00:30:22.260
+Florian: At least a few ignore the.
+
+210
+00:30:25.170 --> 00:30:26.160
+Florian: large distances.
+
+211
+00:30:28.740 --> 00:30:40.920
+Florian: i'm Okay, but you Jordan see it's quite difficult to draw the message out here and to just soak in what is happening, and the reason is that this graph is four dimensional.
+
+212
+00:30:41.970 --> 00:30:46.350
+Florian: So you have the airline, you have the number of flights to publicize in the have to access.
+
+213
+00:30:47.580 --> 00:30:55.260
+Florian: And that makes it very, very difficult to read it, plus you have this kind of two bubbles, and then you also have the average line.
+
+214
+00:30:57.420 --> 00:31:03.240
+Florian: On top of it so it's a lot of information here actually so it's more so, like you're looking at the whole dataset.
+
+215
+00:31:04.410 --> 00:31:11.490
+Florian: What is good here in comparison to the other graph we look before, is that the coloring is kind of smooth right it's easy on the eye i'm.
+
+216
+00:31:12.780 --> 00:31:21.570
+Florian: Not strong you see the differences clearly it's a nice chart that looks looks just looks pleasant and it's very complex it's very, very complex.
+
+217
+00:31:23.310 --> 00:31:25.290
+Florian: And so, how could you make it simpler.
+
+218
+00:31:31.980 --> 00:31:38.730
+Florian: So one way again would be to just go down to one or two dimension and make a bar chart.
+
+219
+00:31:40.440 --> 00:31:43.620
+Florian: And aggregate a look, for instance, something like that.
+
+220
+00:31:45.780 --> 00:31:54.030
+Florian: So here we just average arrival in the mandalay per la over the independent of the links.
+
+221
+00:31:55.830 --> 00:31:59.280
+Florian: And he you see in like one second okay American a delta half.
+
+222
+00:32:00.720 --> 00:32:01.410
+Florian: weightless.
+
+223
+00:32:02.460 --> 00:32:04.170
+Florian: delayed and the other airlines.
+
+224
+00:32:05.910 --> 00:32:17.220
+Florian: And maybe maybe this information is not needed more context and with more because Maybe you can say are but you know American airlines is such a small airline they're clearly an outlier and they can be compared to the others.
+
+225
+00:32:17.640 --> 00:32:29.040
+Florian: So you could support it and second graph ways yeah Okay, but in cedric in comparison to the other airlines delta and American Airlines are not small they deliver a lot of flights, so these, these are the outliers.
+
+226
+00:32:31.770 --> 00:32:39.330
+Florian: So that's what you so that's how you could plan can build up a story, starting from one graph very simple showered and then.
+
+227
+00:32:40.920 --> 00:32:53.100
+Florian: i'm supported with some other some other graphs Tony simple to read and where you are where you only have two dimensions, the alveoli and the airlines and the arrival time.
+
+228
+00:32:54.450 --> 00:32:57.960
+Florian: You could do now to a third where you where you show something maybe Mr.
+
+229
+00:32:59.460 --> 00:33:01.260
+Florian: The number of flights.
+
+230
+00:33:02.460 --> 00:33:04.350
+Florian: Time times distance or so.
+
+231
+00:33:05.370 --> 00:33:13.950
+Florian: But again just keep it very simple and just like attached to your to the story that you've already started, so you have one one really key.
+
+232
+00:33:14.460 --> 00:33:19.860
+Florian: key message in the end, that you can convey and not four or five because four or five key messages.
+
+233
+00:33:20.730 --> 00:33:33.840
+Florian: The more you have, the more date is to dissolve them and, at the end, no one now now I remember what was actually the main point here, I remember like this, and this would like 111 really important point that you want the audience to remember.
+
+234
+00:33:35.790 --> 00:33:37.800
+Florian: And this, you should build your all the graphs around.
+
+235
+00:33:40.560 --> 00:33:49.350
+Florian: And then actually last last last night present I got a very good comment, but the floor, and if you do that, do you not kind of trick people I mean, do you not.
+
+236
+00:33:50.670 --> 00:33:56.010
+Florian: Already interpret the data as so the data as you want people to see it.
+
+237
+00:33:57.750 --> 00:34:01.650
+Florian: Yes, of course, but but that but that's what you do anyway.
+
+238
+00:34:03.870 --> 00:34:06.060
+Florian: I mean i'm not telling you that you should like.
+
+239
+00:34:10.140 --> 00:34:20.490
+Florian: tinker with the data and just screwed up and or fake it or something, but just like boil it down like showed in the in the dimension that you want people to see it.
+
+240
+00:34:21.870 --> 00:34:26.370
+Florian: And, of course, that how you want them to see the subjective to you go, of course.
+
+241
+00:34:27.810 --> 00:34:33.210
+Florian: But there's no way around it, like every every every time you make a presentation is subjective and.
+
+242
+00:34:35.580 --> 00:34:40.500
+Florian: You want data to be objective, but the message, how you interpret the data is always subjective.
+
+243
+00:34:46.560 --> 00:34:48.480
+Keith Kamons: And I think there's a question in the audience.
+
+244
+00:34:53.490 --> 00:34:53.910
+Keith Kamons: sure.
+
+245
+00:34:54.690 --> 00:34:55.260
+Tushar Menon: Oh yeah.
+
+246
+00:34:55.560 --> 00:35:09.930
+Tushar Menon: yeah I was, I was going to sort of bring that same thing I was gonna ask when you're talking about, especially when you talk about removing complexity from a graph, how do you sort of tread the line between.
+
+247
+00:35:11.280 --> 00:35:11.640
+Tushar Menon: Like.
+
+248
+00:35:12.810 --> 00:35:25.740
+Tushar Menon: Making the graph easier to digest versus just removing useful information from the graph like, for instance in this example it's it's not easy to discern what the relationship between.
+
+249
+00:35:26.880 --> 00:35:34.650
+Tushar Menon: The distance traveled and the delay, time is, whereas That was something we could observe in the in the previous graph.
+
+250
+00:35:37.710 --> 00:35:38.790
+Florian: Indeed yeah.
+
+251
+00:35:40.620 --> 00:35:44.430
+Florian: Indeed, you always lose information, of course, if you remove complexity.
+
+252
+00:35:46.410 --> 00:35:49.740
+Florian: question is which one which one once you know which one do you want to remove.
+
+253
+00:35:52.110 --> 00:35:55.440
+Tushar Menon: True, so, is it just about like what kind of.
+
+254
+00:35:56.580 --> 00:36:05.280
+Tushar Menon: What do you want the viewer of the graph to take away in versus like I want them to come to their own conclusions based on.
+
+255
+00:36:06.600 --> 00:36:06.870
+Florian: That.
+
+256
+00:36:07.980 --> 00:36:09.390
+Florian: that's the job that you have to do.
+
+257
+00:36:11.910 --> 00:36:22.290
+Florian: That that's the that's The goal of the visualization well you shouldn't draw conclusions for anyone, but you should prepare kind of as you see the data and you should.
+
+258
+00:36:23.130 --> 00:36:37.980
+Florian: support the conclusion that you draw based on the data and since like just analyzing the data or analyzing anything it's very it's a very, very complex process, you cannot explain each and every step in a presentation, especially not if you have only one or two minutes.
+
+259
+00:36:40.320 --> 00:36:49.230
+Florian: And so that's why you have to think about okay now if I if I only have like a little bit of time like what is actually the highlight that identified the data.
+
+260
+00:36:50.280 --> 00:37:04.590
+Florian: Like what what is the point that I really saw the strongest and then you try to create and the visuals accordingly around around that that that one thing that you want people to kind of the things that you found really cool or you want people to remember.
+
+261
+00:37:06.810 --> 00:37:17.010
+Florian: And this cannot be everything, of course, you have like a lot of correlations and curves you can draw but not all of them might be important or interesting.
+
+262
+00:37:21.930 --> 00:37:33.000
+Florian: And, of course, if you talk them to fellow fellow your your colleagues or fellow students and it's really about drilling down in the details and testing a hypothesis, then you can go deeper.
+
+263
+00:37:34.860 --> 00:37:40.710
+Florian: And you have to go deeper, but if it's about just presenting some like presenting some really.
+
+264
+00:37:41.850 --> 00:37:48.540
+Florian: Crucial insights in a short time then maybe not so much, then you need to simplify.
+
+265
+00:37:51.090 --> 00:38:00.180
+Florian: I hope this makes sense, but it's indeed it's not easy, it is very, very difficult and I found that especially many technical people, including myself.
+
+266
+00:38:00.840 --> 00:38:11.040
+Florian: is very heartbreaking always right, because you have, like all this gigantic complexity which should be like and we understand, but now you need to take it all away, and then only a little bit remains.
+
+267
+00:38:13.380 --> 00:38:16.620
+Florian: But, but this is the easiest thing, how you can present it to other people.
+
+268
+00:38:18.570 --> 00:38:19.050
+In the end.
+
+269
+00:38:20.760 --> 00:38:30.780
+Florian: So there's a trade off and you always have to always think carefully like what's my audience and how much complexity Do I need to remove in order it sticks.
+
+270
+00:38:39.630 --> 00:38:41.790
+Florian: Okay, for one final example.
+
+271
+00:38:44.250 --> 00:38:46.470
+Florian: This is the one we also saw before.
+
+272
+00:38:51.210 --> 00:39:00.900
+Florian: yeah This is also the most complex example because here a lot of stuff is happening so you may ask like Okay, how do I turn this into a nice visual that people can.
+
+273
+00:39:03.540 --> 00:39:04.890
+Florian: talk to them from really quickly.
+
+274
+00:39:09.900 --> 00:39:14.100
+Florian: And like one idea is again like first you take what you focus on one.
+
+275
+00:39:15.420 --> 00:39:31.140
+Florian: category, maybe, at a time, so, for instance let's focus on the cattle, we have not used so first of all, he Okay, the graph is nicer formatted it easy on the eye of a few reduce some lines in her in order to avoid the clustering.
+
+276
+00:39:33.180 --> 00:39:34.890
+Florian: Also, known as a key message on top.
+
+277
+00:39:36.960 --> 00:39:51.660
+Florian: And the key message is that the users is that satisfaction varies greatly by feature and to to to to make the point here is that you focus on one category, at a time and show that so, for instance, here, the feature, I have not use a feature.
+
+278
+00:39:53.010 --> 00:39:59.490
+Florian: See it's it's depending on the feature like between 50 and zeros some teachers always use that feature was never used.
+
+279
+00:40:02.640 --> 00:40:06.240
+Florian: And again type in a coloring very spare sparsely but he used.
+
+280
+00:40:09.840 --> 00:40:16.800
+Florian: and also here like a little description again like feature always used to the little like one way way way way less than the others.
+
+281
+00:40:18.720 --> 00:40:32.130
+Florian: You can now go on and do the quiz the other categories, for instance, you you summarize the categories, where people were satisfied or very satisfied with competitors like and then you click you can show that the end where the most.
+
+282
+00:40:34.320 --> 00:40:36.090
+Florian: People were said, people are satisfied with.
+
+283
+00:40:44.130 --> 00:40:53.520
+Florian: What I had one more I had one more graph where you put all that, together, but it's also into complex I hope this makes sense, do you have any question here, and this.
+
+284
+00:40:54.690 --> 00:40:55.710
+Florian: was just example.
+
+285
+00:41:00.930 --> 00:41:01.440
+Okay.
+
+286
+00:41:03.030 --> 00:41:14.790
+Florian: But again, the main the main the main things always take away the complexity here, for instance, like an only show what you need to show you want to show acquaintance here not let us all great out like because we don't want to focus on it right now and.
+
+287
+00:41:15.810 --> 00:41:25.380
+Florian: there's no numbers here in these Gray areas and so forth, and you only want to show the numbers here where it matters, and the only highlight you can color the areas where it matters it matters.
+
+288
+00:41:27.390 --> 00:41:27.990
+Florian: i'm.
+
+289
+00:41:30.720 --> 00:41:34.950
+Florian: Looking at the time, I had a little bit of storytelling but only around one or two slides.
+
+290
+00:41:37.050 --> 00:41:42.030
+Florian: But maybe let's try and see whether we still have time for that at the end, so I can still.
+
+291
+00:41:44.700 --> 00:41:49.320
+Florian: Show you a little bit of do's and don'ts normalcy downs.
+
+292
+00:41:51.060 --> 00:41:53.310
+Florian: They also pay that also in the book.
+
+293
+00:41:56.220 --> 00:41:58.080
+Florian: Okay, so this is one of the quotes from the book so.
+
+294
+00:41:59.190 --> 00:42:03.750
+Florian: power corrupts power point absolutely corrupts, and that is that.
+
+295
+00:42:07.500 --> 00:42:23.820
+Florian: If you if you have a simple table, there are some there are some extended like how, what is the tables should look like and, for instance, a table shouldn't have any vertical lines and at something just just one of the tables.
+
+296
+00:42:28.290 --> 00:42:40.920
+Florian: And if you look at all of these templates, for instance in excel or PowerPoint then 80% of those develop, I have a basic table rules just be careful, like you should just get something.
+
+297
+00:42:42.120 --> 00:42:53.700
+Florian: Like that just always like careful, so it like the best the best tables obviously like C and D here, because they are the most simple and they don't have death after two lines as possible and.
+
+298
+00:42:55.080 --> 00:42:56.370
+Florian: And you have to.
+
+299
+00:42:57.420 --> 00:43:00.510
+Florian: The column the column names are kind of highlighted somehow and it.
+
+300
+00:43:01.710 --> 00:43:06.660
+Florian: In this is like way too much clutter and the formatting is not correct like it's.
+
+301
+00:43:07.680 --> 00:43:19.350
+Florian: Now here's even worse, like what takes you it takes like 10 times as much as to reach here is here just because of formatting is just read the coloring is reviewed.
+
+302
+00:43:22.350 --> 00:43:28.020
+Florian: Okay coloring already talked a lot about its effect that always be very careful with coloring um.
+
+303
+00:43:29.250 --> 00:43:42.960
+Florian: So, for instance, here, you see all the states in the US and you see the population grows and, of course, you can you can distinguish send us one color for each state, and then you get a rainbow but what's the point I mean.
+
+304
+00:43:43.980 --> 00:43:45.630
+Florian: it's just very, very distracting.
+
+305
+00:43:47.700 --> 00:43:55.860
+Florian: And you could use color just to do something like that, for instance, you want to just pinpoint the differences between different regions and he you can see, with.
+
+306
+00:43:57.360 --> 00:44:03.390
+Florian: In one second that okay in the West, yet most playgrounds the news is strategically so make a point.
+
+307
+00:44:10.650 --> 00:44:21.180
+Florian: One like this, so you can call it by region, and then you additionally on top you you highlight maybe text us cuz you because your presentation about population growth of Texas.
+
+308
+00:44:23.160 --> 00:44:25.620
+Florian: And Louisiana also highlight something like that.
+
+309
+00:44:27.750 --> 00:44:32.400
+Florian: So it's a mixture of choosing the color and also how strong use it.
+
+310
+00:44:37.890 --> 00:44:40.140
+Florian: 3D don't don't go 3D.
+
+311
+00:44:41.400 --> 00:44:49.020
+Florian: The US again here in PowerPoint and excel you will it will there's a lot of 3D charts, but the problem was through the chat is that.
+
+312
+00:44:50.190 --> 00:44:55.350
+Florian: I mean everyone that did some basic course in mathematics now said, if you.
+
+313
+00:44:57.600 --> 00:45:07.530
+Florian: If you if you if you want to have you have a 3D visualized on a display in 2d you always lose information as possible.
+
+314
+00:45:09.510 --> 00:45:11.880
+Florian: So if you want to be a 3D on today display.
+
+315
+00:45:12.990 --> 00:45:22.530
+Florian: Maybe later on in 10 years when we have 3D displays cool cool thing yeah because then everyone can kind of do some simple but as long as we have our two to one to the monitors and femurs.
+
+316
+00:45:23.730 --> 00:45:30.450
+Florian: it's not just not good, for instance, just here like an example like how many like what do you think how many people died in the first place on the Titanic.
+
+317
+00:45:33.810 --> 00:45:45.570
+Florian: Like you would think it's 290 or something but it's actually 310 or so, so it is just because of the 3D you just you can lose a lot of accuracy, you cannot see any more what exact numbers.
+
+318
+00:45:47.700 --> 00:45:57.270
+Florian: And it just it's also it's more difficult for the eye to catch what's going on snow cognitive energy so and there's no, there is no again.
+
+319
+00:45:58.290 --> 00:46:01.620
+Florian: In going 3D 3D no gain ignore like.
+
+320
+00:46:04.020 --> 00:46:13.320
+Florian: You just you just make my foot for people to submit the graph you also can make if you have something like this is also very, very difficult, I mean, because if you on the right hand side in the picture.
+
+321
+00:46:13.860 --> 00:46:18.840
+Florian: it's very difficult to see like where does blue spot here, and this blue.is in space because.
+
+322
+00:46:21.030 --> 00:46:25.560
+Florian: Is it is it like more on the left or as a deeper or it's very hard to see.
+
+323
+00:46:28.080 --> 00:46:43.740
+Florian: So again, if you if you have like a like a like a visual ization engine where where you can then on the fly like move it and that then that's cool, but if you just want to print it on to deed it's very, very difficult to see actually where these points lines space.
+
+324
+00:46:49.050 --> 00:46:51.690
+Florian: um Okay, I think we have 10 more minutes.
+
+325
+00:46:52.800 --> 00:46:58.920
+Florian: So some examples from our research, but maybe if you want, we can spend like one or two minutes on storytelling.
+
+326
+00:47:00.480 --> 00:47:05.940
+Florian: But before I do that do you have any like questions that came up spontaneously in the last.
+
+327
+00:47:07.980 --> 00:47:11.640
+Florian: 50 minutes or any anything else.
+
+328
+00:47:11.940 --> 00:47:22.140
+Valentina Harding: We didn't talk about yeah I was wondering like how did you learn, it was it just kind of like their experience like how did you learn like in kind of like an order.
+
+329
+00:47:22.740 --> 00:47:32.760
+Valentina Harding: to portray was it like you were seeing people weren't understanding the point of your message, or just a curiosity of data visualization I guess like what was kind of like your process.
+
+330
+00:47:33.450 --> 00:47:40.740
+Valentina Harding: sense of like starting an industry and then realizing like was enough bad PowerPoint presentations and you're like I need to change something.
+
+331
+00:47:44.040 --> 00:47:47.730
+Florian: But, in general, like, I always I always run into the issue is that when I.
+
+332
+00:47:47.970 --> 00:47:52.320
+Florian: was doing my PhD okay now, I have some graphs you, but how do I.
+
+333
+00:47:53.970 --> 00:47:57.000
+Florian: Is there any guidance and then you start googling as like.
+
+334
+00:47:58.980 --> 00:48:05.490
+Florian: I don't know just and then there's a start to your own stuff and you think oh it's really hard like I totally totally despite that.
+
+335
+00:48:06.870 --> 00:48:20.520
+Florian: was confusing everyone um and then I have to say, of course, like an industry is even worse because, like if you write an academic paper you can like you can give a lot of times and make a very nice graph and put it in the paper.
+
+336
+00:48:21.570 --> 00:48:28.560
+Florian: But yes very accurate and in industry, you don't have so much time and especially the people you talk to don't have so much time.
+
+337
+00:48:29.700 --> 00:48:36.540
+Florian: And so you wanna you want to also make it for them so that they can that you can send it afterwards, and they can regenerate or so forth.
+
+338
+00:48:38.190 --> 00:48:50.340
+Florian: And like it's always it was always a question like how do I mix a little bit better like what can I do, and then I started actually as part of like like would be cool to do some training on that and and try not.
+
+339
+00:48:51.720 --> 00:48:52.440
+Florian: To get the training.
+
+340
+00:48:53.670 --> 00:48:54.870
+Florian: And then I started to.
+
+341
+00:48:56.310 --> 00:48:58.230
+Florian: To to just.
+
+342
+00:48:58.260 --> 00:49:03.570
+Florian: look into Cuba to separate what books are there and actually the lot of books out of quickbooks and.
+
+343
+00:49:04.950 --> 00:49:16.200
+Florian: Such started reading on it and started to create some examples and there you go it's really just a thing of thinking about it, like if you see a visual like to think like Okay, how could I do that.
+
+344
+00:49:17.160 --> 00:49:24.750
+Florian: Or how could it else have done it and actually also my my girlfriend is also working on communication is the same same problem.
+
+345
+00:49:26.130 --> 00:49:39.600
+Florian: She always has to think like Okay, but this is not nice normal understand this liquid like, how do we do better and it's there's no magic recipe is more like practice and, just like I think understanding that.
+
+346
+00:49:41.370 --> 00:49:50.550
+Florian: It can it can maybe think about the options and then try try different things, and then, if you, if you like it, maybe ask ask a friend like Oh, how do they kind of segue did you.
+
+347
+00:49:51.840 --> 00:49:57.420
+Florian: Is it is it easy for you to to get some nice on the higher yeah there was a time it gets easier, I guess.
+
+348
+00:49:58.140 --> 00:50:09.330
+Valentina Harding: yeah no, I think I was really interested if, like because it sounds like it was kind of a natural progression of it, you didn't like have someone sit you doubted be like you need to work on this skill.
+
+349
+00:50:09.330 --> 00:50:17.700
+Valentina Harding: of data, the josie yes, which is like inch because I yeah it's a very useful skill, but we don't really have like formal training on it, but.
+
+350
+00:50:17.820 --> 00:50:26.820
+Florian: that's good yeah that's what I also thought it could be cool to get some formal training with this not too much, I mean there are some consultant That gives you workshops and so forth, and.
+
+351
+00:50:28.020 --> 00:50:31.860
+Florian: just formal trainings I don't know whether there's also the courses on that maybe.
+
+352
+00:50:32.400 --> 00:50:44.610
+Florian: I think like I said, like, if you like, especially for data scientists or for anyone that works with a lot of data and it's presented it's kind of a very useful skills, just think about how to present it afterwards done the analysis.
+
+353
+00:50:45.720 --> 00:50:46.110
+Valentina Harding: Thank you.
+
+354
+00:50:51.090 --> 00:50:54.090
+Florian: is to is to is to have actually time or is it.
+
+355
+00:50:54.510 --> 00:50:56.940
+Patricio La Rosa: seven minutes seven minutes.
+
+356
+00:50:57.030 --> 00:50:57.390
+Patricio La Rosa: Yes.
+
+357
+00:50:57.420 --> 00:51:04.350
+Florian: We woke up says any other question before I start to my slides but.
+
+358
+00:51:05.490 --> 00:51:09.030
+Florian: Just let me know whether you have anything else that you're curious about.
+
+359
+00:51:17.430 --> 00:51:18.780
+Florian: Okay um.
+
+360
+00:51:21.390 --> 00:51:21.810
+Florian: Can.
+
+361
+00:51:23.430 --> 00:51:35.550
+Florian: storytelling storytelling is also like it's a base missing own field on its own, and it doesn't necessarily always have to do with visualization but, of course, as you saw before it's very good to link those two.
+
+362
+00:51:37.980 --> 00:51:43.560
+Florian: um so giving a nice visuals and wrapping a story around it.
+
+363
+00:51:44.940 --> 00:51:48.600
+Florian: And how like a lot of people.
+
+364
+00:51:50.400 --> 00:51:56.700
+Florian: Do it it's just like you, how can you open your PowerPoint and then you do some bullet points then keep at it.
+
+365
+00:51:57.660 --> 00:52:00.600
+Florian: And then, and you just to kind of the one of the.
+
+366
+00:52:01.260 --> 00:52:11.550
+Florian: Things I found it also one of the books, where they try to make that a little bit and then sad i'll keep you know us we take, we take one also one of the most famous stories through red riding hood and we put in PowerPoint and then this this comes out.
+
+367
+00:52:12.930 --> 00:52:19.950
+Florian: Perfect baseball and circle, the Red riding hood our age has to work through the five four miles from point A to Point B grandmas.
+
+368
+00:52:20.370 --> 00:52:39.210
+Florian: Are ah nice cool food first ones I had to grandma second eater and three addresses in our clothes our HR is at grandma's at 2pm ask three questions identify problem after third question, who is our age solution vendor employee tool expected outcome grandma and our HR live in the world.
+
+369
+00:52:40.980 --> 00:52:48.870
+Florian: it's all correct or accurate was very boring, as you can and takes away all the child story so it's there's kind of this kind of the main point here.
+
+370
+00:52:50.040 --> 00:52:57.420
+Florian: So designing PowerPoint slides and basically anything want to communicate and how can you make it a little bit interesting and not just list, like the.
+
+371
+00:52:58.740 --> 00:52:59.520
+check mark on it.
+
+372
+00:53:03.450 --> 00:53:13.170
+Florian: So let's hear some very basic ideas I guess it's a set as a lot of things like there's a lot of concept like, how do you like to have an elevator pitch like, how do you.
+
+373
+00:53:14.520 --> 00:53:21.870
+Florian: Talk about your your master thesis your PC just a project in one one minute an elevator to anyone.
+
+374
+00:53:22.890 --> 00:53:30.840
+Florian: How do you do it in three minutes and so forth, but some some main points that are always very good to take care of is.
+
+375
+00:53:32.490 --> 00:53:40.380
+Florian: That you when that for the stories that you want to tell it to think a little bit about it, like what is your audience.
+
+376
+00:53:40.860 --> 00:53:53.220
+Florian: And what do you want your audience to remember, and this should be really only one point, maybe two but just one just one highlight what is it that you want your audience to remember.
+
+377
+00:53:55.950 --> 00:54:08.070
+Florian: And it's good that you just write it down and create like a short three minute story make some sentences, not so much, but like what does the audience want to remain should be structured in the following way so usually you, you have a beginning.
+
+378
+00:54:09.840 --> 00:54:16.950
+Florian: And the beginning is always the catch they get on English, the English word but it's kind of to catch people's attention.
+
+379
+00:54:18.600 --> 00:54:25.890
+Florian: So why why why try to listen to you for like two minutes in the elevator yeah So what does what does inform me.
+
+380
+00:54:27.120 --> 00:54:39.000
+Florian: And this is about introducing the plot a little bit like the context, maybe it's connected to everyone's people's lives, so if you work if you do something, for instance, that let's say reduce traffic jams.
+
+381
+00:54:39.420 --> 00:54:45.720
+Florian: Because you have a cool logistics system is the light don't you also hate like sending traffic and waiting like.
+
+382
+00:54:46.500 --> 00:54:55.020
+Florian: The average person is spending so much light at the time of their life and in traffic or something like that not something that where you can reach the audience and connect to.
+
+383
+00:54:56.310 --> 00:54:59.430
+Florian: The challenges and problems of the of the audience also.
+
+384
+00:55:01.410 --> 00:55:12.150
+Florian: Then comes the middle and this is the system, what is actually the precise problem and how do you tackle that and, what is important here is that.
+
+385
+00:55:13.380 --> 00:55:30.360
+Florian: The problem, should you should give why one example, so not the model at another firm has whatever and how you solve it again, you don't want to solve like Okay, I did this, they did they did they did they didn't you didn't do this but focus on two or three things that you did, maybe.
+
+386
+00:55:32.130 --> 00:55:41.070
+Florian: Not more not more than two or three things, how did you solve it like what are the key things that you did in order to achieve what you did achieve.
+
+387
+00:55:42.720 --> 00:55:54.570
+Florian: And then, in the last part SEC, the end it's kind of Okay, there you can call me, you can you can you can call to action, especially if you feel that's the intention, but sometimes you don't.
+
+388
+00:55:56.100 --> 00:56:17.880
+Florian: don't want necessarily the audience, to do something, sometimes it's about remembering what you did, and then to tie back to the beginning the the point you started with remember the traffic jams now now now, with the help of this model that we build we can reduce traffic jams in.
+
+389
+00:56:20.010 --> 00:56:22.500
+Florian: In the city by 30% or so.
+
+390
+00:56:24.900 --> 00:56:34.440
+Florian: And I think they also some cool YouTube videos on this on this like storytelling probably a lot of very good examples and my former university say even had kind of.
+
+391
+00:56:36.390 --> 00:56:54.720
+Florian: A competition with PhD competition where PhD students should present their work in I think two or three minutes Max and then there wasn't a boating of who are the best and they won a prize, and then they there, they also they always use this kind of structure.
+
+392
+00:56:57.900 --> 00:57:06.600
+Florian: To to actually effectively communicate what they did my PhD like what they did in four years in three minutes, which is, can you can match them very difficult.
+
+393
+00:57:07.890 --> 00:57:17.550
+Florian: Well, I hope this gives you at least some intuition, maybe even have heard before this is this is something that you will hear your property from different corners in different fields.
+
+394
+00:57:18.930 --> 00:57:25.860
+Florian: But there's also I think i've ever useful skill to just think about it, how you want to communicate something.
+
+395
+00:57:27.150 --> 00:57:27.510
+Florian: So.
+
+396
+00:57:27.540 --> 00:57:29.130
+Florian: My my core message would be please.
+
+397
+00:57:30.210 --> 00:57:31.680
+Florian: I hope you, you know have.
+
+398
+00:57:33.390 --> 00:57:36.660
+Florian: whenever you look at visuals in the future, you remember a little bit I.
+
+399
+00:57:37.680 --> 00:57:40.560
+Florian: Think, if you think about strategies, how to.
+
+400
+00:57:41.670 --> 00:57:43.530
+Florian: automate your own visuals in the future.
+
+401
+00:57:45.270 --> 00:57:55.950
+Patricio La Rosa: Thank you so much Florian a unless say give a round of applause to Dr Arnold 40 his presentation and for introducing us to the concept of, we can say legion.
+
+402
+00:57:56.550 --> 00:58:07.830
+Patricio La Rosa: and very useful for us as a practice, I mean, and I hope a you guys take advantage of the recommendations to protect your own for the.
+
+403
+00:58:09.600 --> 00:58:22.170
+Patricio La Rosa: Florida, and is it okay to say that if they have questions they can reach you in a way, if that's okay with you, I mean if if this is the case of July channel dose Romeo or will they be able to reach out to us directly.
+
+404
+00:58:22.980 --> 00:58:24.420
+Florian: Yes, Sir anytime.
+
+405
+00:58:24.960 --> 00:58:39.240
+Patricio La Rosa: Great, thank you for that I appreciate that well a fairly good weekend everyone on me see See you in our next a weekend take care, everyone have a good weekend.
+
+406
+00:58:42.030 --> 00:58:43.080
+enjoy the weekend bye bye.
+
